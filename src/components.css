@@ -1,0 +1,329 @@
+/*Global*/
+
+body {
+  font-family: "Lato";
+  text-decoration: #47525e;
+}
+
+.body {
+  top: 10%;
+  position: absolute;
+  height: 82%;
+  width: 95%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  vertical-align: middle;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* ------------------- COMPONENTS  -------------------*/
+
+/* TopNav */
+
+.top-nav-stick {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  background-color: #e9e8e1;
+  position: fixed;
+  display: flex;
+  z-index: 100;
+  height: 8%;
+}
+
+.top-nav-child {
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  height: 90%;
+  width: auto;
+  max-width: 50%;
+  vertical-align: bottom;
+}
+
+.top-nav-child img {
+  height: inherit;
+  max-width: 100%;
+  max-height: inherit;
+  vertical-align: baseline;
+}
+
+.bottom-nav-stick {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* ----- END OF TestNav ----- */
+
+/* BackButton */
+
+.back-button {
+  opacity: 50%;
+  position: absolute;
+  margin-top: 15%;
+}
+
+/* ----- END OF BackButton ----- */
+
+/* ----- PAGEHOMEPAGE ----- */
+
+.motivational-photo {
+  height: 30%;
+  margin-top: 0;
+  border: 1px solid green;
+  text-align: center;
+}
+
+.motivational-photo img {
+  height: 100%;
+  width: auto;
+  max-width: 50%;
+}
+
+.list-item {
+  width: 12%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.achieving-my-goals {
+  font-size: xx-large;
+  text-align: center;
+  border-bottom: 2px solid #47525e;
+  font-weight: bold;
+}
+
+.add-goal {
+  width: inherit;
+  display: flex;
+  border: solid #47525e 5px;
+  font-size: larger;
+  padding: 1px;
+}
+
+.post-goals {
+  border: 2px solid #47525e;
+  padding: 2px;
+  height: 7.5%;
+  width: 100%;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+/* ----- END OF PAGEHOMEPAGE ----- */
+
+/* ----- PAGEHELP ----- */
+.help-icon-img {
+  width: auto;
+  height: 100%;
+}
+
+.help-icon {
+  height: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+.help-header {
+  text-align: center;
+  font-size: 2em;
+}
+
+.help-info {
+  font-size: 1em;
+}
+
+.help-list {
+  text-decoration: underline;
+  text-decoration-color: lightblue;
+  color: lightblue;
+  list-style-position: inside;
+}
+
+/* ----- END OF PAGEHELP ----- */
+
+/* ----- PAGESETTINGS ----- */
+.settings-header-container {
+  text-align: center;
+  height: 20%;
+  width: 100%;
+  /* border: 5px green solid; */
+  border-bottom: 0.2em solid #47525e;
+  vertical-align: middle;
+  display: inline-flex;
+  padding-left: 30%;
+}
+
+.settings-icon-img {
+  width: auto;
+  height: 100%;
+  /* border: 5px red solid; */
+  display: flex;
+}
+.settings-header {
+  display: flex;
+  font-size: 3em;
+  /* border: 5px solid orange; */
+  height: 100%;
+  width: auto;
+  line-height: 2em;
+}
+
+.settings-list-item {
+  border-bottom: 1px solid #47525e;
+}
+
+.settings-version-header {
+  display: inline-flex;
+  height: 7.5%;
+  border-bottom: #47525e solid 1px;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.settings-version-number {
+  float: right;
+  display: flex;
+  margin-left: 80%;
+}
+/* .settings-version-text {
+  
+} */
+/* ----- END OF PAGESETTINGS ----- */
+
+.add-button {
+  margin-left: 60%;
+}
+
+/* PAGEGOALCATEGORYEDUCATION */
+
+.goal-cat-header {
+  display: inline-flex;
+  width: 100%;
+  margin-left: 2em;
+}
+
+.category-list {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 5%;
+}
+
+/* end of PAGEGOALCATEGORYEDUCATION */
+
+/* PAGEGOALCATEGORYCUSTOM */
+
+.custom-container {
+  border: 3px solid #343f4b;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 1px;
+  background-color: #e9edf2;
+}
+
+.custom-option {
+  border: 1px solid #343f4b;
+  border-radius: 5em;
+  text-align: center;
+  margin: 1%;
+  width: auto;
+  padding: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: inline-flex;
+  color: #343f4b;
+}
+
+.custom-limit {
+  font-style: italic;
+}
+
+.custom-type {
+  height: 8em;
+  border: 3px solid #343f4b;
+}
+
+.custom-recurring-container {
+  height: 10%;
+  width: auto;
+  border: 3px solid #343f4b;
+  display: inline-flex;
+  margin-top: 1em;
+  padding: 0.5em;
+}
+
+.custom-recurring-text {
+  width: 80%;
+  display: flex;
+}
+
+.custom-recurring-img {
+  width: 20%;
+}
+
+/* END OF PAGEGOALCATEGORYCUSTOM */
+
+/* GOAL CATEGORIES */
+.goal-category-button-container {
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  margin-left: 30%;
+  margin-top: 2em;
+}
+
+.goal-category-button {
+  text-align: center;
+  width: 100%;
+  margin: 3em;
+}
+
+.goal-category-space {
+  width: 100%;
+  height: 2em;
+}
+
+/* RESOURCES */
+
+.resource-container {
+  height: 80%;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.resource-container td {
+  vertical-align: top;
+  overflow: hidden;
+  position: relative;
+}
+
+.resource-container div {
+  height: 10%;
+  width: 100%;
+  top: 0;
+  border: 3px solid black;
+  display: inline-flex;
+}
+
+.resource-container img {
+  width: 100%;
+  height: 7%;
+  object-fit: cover;
+  height: -webkit-fill-available;
+  display: block;
+  overflow: hidden;
+}
+
+.button-control {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
