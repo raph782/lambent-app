@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/raph782.github.io/static/css/main.7b622447.chunk.css",
+    "main.js": "/raph782.github.io/static/js/main.52dc61be.chunk.js",
+    "main.js.map": "/raph782.github.io/static/js/main.52dc61be.chunk.js.map",
+    "runtime-main.js": "/raph782.github.io/static/js/runtime-main.190355cd.js",
+    "runtime-main.js.map": "/raph782.github.io/static/js/runtime-main.190355cd.js.map",
+    "static/js/2.6b3b0acd.chunk.js": "/raph782.github.io/static/js/2.6b3b0acd.chunk.js",
+    "static/js/2.6b3b0acd.chunk.js.map": "/raph782.github.io/static/js/2.6b3b0acd.chunk.js.map",
+    "index.html": "/raph782.github.io/index.html",
+    "precache-manifest.6db67ddbbf7a662f574ffe155154eb15.js": "/raph782.github.io/precache-manifest.6db67ddbbf7a662f574ffe155154eb15.js",
+    "service-worker.js": "/raph782.github.io/service-worker.js",
+    "static/css/main.7b622447.chunk.css.map": "/raph782.github.io/static/css/main.7b622447.chunk.css.map",
+    "static/js/2.6b3b0acd.chunk.js.LICENSE.txt": "/raph782.github.io/static/js/2.6b3b0acd.chunk.js.LICENSE.txt",
+    "static/media/defaultMotivational.jpg": "/raph782.github.io/static/media/defaultMotivational.676344c2.jpg",
+    "static/media/iconHelp.png": "/raph782.github.io/static/media/iconHelp.5a5e8bc1.png",
+    "static/media/logoOurVisit.png": "/raph782.github.io/static/media/logoOurVisit.e66e4e4d.png",
+    "static/media/resourcesEducation.png": "/raph782.github.io/static/media/resourcesEducation.f45dd944.png",
+    "static/media/resourcesHealth.png": "/raph782.github.io/static/media/resourcesHealth.767e7da4.png",
+    "static/media/resourcesJobs.png": "/raph782.github.io/static/media/resourcesJobs.c6dcc012.png",
+    "static/media/resourcesSupport.png": "/raph782.github.io/static/media/resourcesSupport.613372c0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.190355cd.js",
+    "static/js/2.6b3b0acd.chunk.js",
+    "static/css/main.7b622447.chunk.css",
+    "static/js/main.52dc61be.chunk.js"
+  ]
+}
