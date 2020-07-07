@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../components.css";
 // import BackButton from "./components/BackButton";
+import SubmitGoalButton from "../components/SubmitGoalButton";
+import Dates from "../components/Dates";
 import AddCustomGoal from "../components/AddCustomGoal";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -34,7 +36,7 @@ class PageGoalCategoryHealth extends Component {
     return (
       <div className="body">
         {/* <BackButton></BackButton> */}
-        <div>DATES SECTION IN CONSTRUCTION</div>
+        <Dates />
 
         <div className="goal-cat-header">
           <PeopleAltIcon fontSize="large"></PeopleAltIcon>
@@ -141,7 +143,7 @@ class PageGoalCategoryHealth extends Component {
               </ListItemSecondaryAction>
             </ListItem>
           </List>
-          <AddCustomGoal />
+          <SubmitGoalButton />
         </div>
       </div>
     );

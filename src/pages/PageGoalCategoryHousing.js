@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "../components.css";
 // import BackButton from "./components/BackButton";
-import AddCustomGoal from "../components/AddCustomGoal"
+import SubmitGoalButton from "../components/SubmitGoalButton";
+import Dates from "../components/Dates";
+import AddCustomGoal from "../components/AddCustomGoal";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
@@ -33,7 +35,7 @@ class PageGoalCategoryHousing extends Component {
     return (
       <div className="body">
         {/* <BackButton></BackButton> */}
-        <div>DATES SECTION IN CONSTRUCTION</div>
+        <Dates />
 
         <div className="goal-cat-header">
           <HouseIcon fontSize="large" />
@@ -147,7 +149,7 @@ class PageGoalCategoryHousing extends Component {
               </ListItemSecondaryAction>
             </ListItem>
           </List>
-          <AddCustomGoal />
+          <SubmitGoalButton />
         </div>
       </div>
     );

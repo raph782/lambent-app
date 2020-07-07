@@ -1,7 +1,7 @@
 /*Global*/
 
 body {
-  font-family: "Lato";
+  font-family: "Verdana";
   text-decoration: #47525e;
 }
 
@@ -57,6 +57,24 @@ body {
 
 /* ----- END OF TestNav ----- */
 
+/* Dates */
+
+.dates-container {
+  width: 12%;
+  height: 15%;
+  display: inline-block;
+  text-align: center;
+}
+.dates-number {
+  width: 100%;
+  /* border: 2px solid green; */
+}
+
+.dates-letter {
+  width: 100%;
+  padding-bottom: 1em;
+  /* border: 2px solid blue; */
+}
 /* BackButton */
 
 .back-button {
@@ -245,8 +263,9 @@ body {
 }
 
 .custom-type {
-  height: 8em;
+  height: 7em;
   border: 3px solid #343f4b;
+  margin-top: 1em;
 }
 
 .custom-recurring-container {
@@ -254,7 +273,7 @@ body {
   width: auto;
   border: 3px solid #343f4b;
   display: inline-flex;
-  margin-top: 1em;
+  margin-top: 2em;
   padding: 0.5em;
 }
 
@@ -271,11 +290,12 @@ body {
 
 /* GOAL CATEGORIES */
 .goal-category-button-container {
-  width: 30%;
-  height: 100%;
+  width: 35%;
+  height: 70%;
   text-align: center;
-  margin-left: 30%;
+  margin-left: 10%;
   margin-top: 2em;
+  border: 2px solid red;
 }
 
 .goal-category-button {
@@ -286,34 +306,39 @@ body {
 
 .goal-category-space {
   width: 100%;
-  height: 2em;
+  height: 1em;
 }
 
 /* RESOURCES */
 
 .resource-container {
-  height: 80%;
+  height: 75%;
   width: 100%;
   table-layout: fixed;
+  border-collapse: collapse;
+  padding: 0;
 }
 
 .resource-container td {
   vertical-align: top;
   overflow: hidden;
   position: relative;
+  border: 2px solid black;
 }
 
 .resource-container div {
-  height: 10%;
+  height: 12%;
   width: 100%;
   top: 0;
-  border: 3px solid black;
-  display: inline-flex;
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 3px;
 }
 
 .resource-container img {
   width: 100%;
-  height: 7%;
+  height: 9%;
   object-fit: cover;
   height: -webkit-fill-available;
   display: block;

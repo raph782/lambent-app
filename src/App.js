@@ -6,10 +6,14 @@ import PageGoalCategoryMenu from "./pages/PageGoalCategoryMenu";
 import PageGoalCategoryChildren from "./pages/PageGoalCategoryChildren";
 import PageGoalCategoryCustom from "./pages/PageGoalCategoryCustom";
 import PageGoalCategoryEducation from "./pages/PageGoalCategoryEducation";
+import PageGoalCategoryJob from "./pages/PageGoalCategoryJob";
 import PageGoalCategoryHealth from "./pages/PageGoalCategoryHealth";
 import PageGoalCategoryHousing from "./pages/PageGoalCategoryHousing";
 
 import PageResourcesMenu from "./pages/PageResourcesMenu";
+import PageResourcesEducation from "./pages/PageResourcesEducation";
+import PageResourcesEducationFinances from "./pages/PageResourcesEducationFinances";
+import PageResourcesEducationChildren from "./pages/PageResourcesEducationChildren";
 import PageHelp from "./pages/PageHelp";
 
 import {
@@ -56,7 +60,30 @@ export default function App() {
             path="/goals/health"
             component={PageGoalCategoryHealth}
           />
+          <Route exact path="/goals/job" component={PageGoalCategoryJob} />
           <Route exact path="/resources" component={PageResourcesMenu} />
+          <Route exact path="/resources/health" component={PageResourcesMenu} />
+          <Route
+            exact
+            path="/resources/education"
+            component={PageResourcesEducation}
+          />
+          <Route
+            exact
+            path="/resources/education/finances"
+            component={PageResourcesEducationFinances}
+          />
+          <Route
+            exact
+            path="/resources/education/children"
+            component={PageResourcesEducationChildren}
+          />
+          <Route exact path="/resources/jobs" component={PageResourcesMenu} />
+          <Route
+            exact
+            path="/resources/support"
+            component={PageResourcesMenu}
+          />
           <Route exact path="/" component={PageHomePage} />
         </Switch>
         <BottomNav />

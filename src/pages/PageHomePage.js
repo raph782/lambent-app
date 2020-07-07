@@ -7,6 +7,7 @@ import defaultMotivational from "../icons/defaultMotivational.jpg";
 
 class PageHomePage extends Component {
   state = {};
+  
   render() {
     return (
       <div className="body">
@@ -15,7 +16,9 @@ class PageHomePage extends Component {
         </div>
         <div className="achieving-my-goals">Achieving My Goals</div>
         <Goals></Goals>
-        <div className="post-goals">Goal History</div>
+        <Link to="/resources">
+          <div className="post-goals">Goal History</div>
+        </Link>
         <div className="post-goals">Key Measures</div>
       </div>
     );

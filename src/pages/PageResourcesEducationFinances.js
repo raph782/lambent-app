@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import resourcesHealth from "../icons/resourcesHealth.png";
-import resourcesEducation from "../icons/resourcesEducation.png";
+import resourcesEducationFinancesBudgeting from "../icons/resourcesEducationFinancesBudgeting.png";
+import resourcesEducationFinancesCredit from "../icons/resourcesEducationFinancesCredit.png";
+import resourcesEducationFinancesFinancialGoals from "../icons/resourcesEducationFinancesFinancialGoals.png";
 import resourcesJobs from "../icons/resourcesJobs.png";
 import resourcesSupport from "../icons/resourcesSupport.png";
 import "../components.css";
 
-class PageResourcesMenu extends Component {
+class PageResourcesEducationFinances extends Component {
   state = {};
   render() {
     return (
@@ -25,23 +27,22 @@ class PageResourcesMenu extends Component {
         <table className="resource-container">
           <tr>
             <td>
-              <div>Health</div>
+              <div>Financial Goals</div>
 
-              <img src={resourcesHealth} />
+              <img src={resourcesEducationFinancesFinancialGoals} />
             </td>
             <td>
-              <div>Education</div>
-              <img src={resourcesEducation} />
+              <div>Budgeting / Spending</div>
+              <img src={resourcesEducationFinancesBudgeting} />
             </td>
           </tr>
           <tr>
             <td>
-              <div>Jobs</div>
-              <img src={resourcesJobs} />
+              <div>Credit Loans</div>
+              <img src={resourcesEducationFinancesCredit} />
             </td>
             <td>
-              <div>Support</div>
-              <img src={resourcesSupport} />
+              <div>Saving</div>
             </td>
           </tr>
         </table>
@@ -50,4 +51,4 @@ class PageResourcesMenu extends Component {
   }
 }
 
-export default PageResourcesMenu;
+export default PageResourcesEducationFinances;

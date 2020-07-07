@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import AddIcon from "@material-ui/icons/Add";
 
 class AddCustomGoal extends Component {
   state = {};
@@ -15,6 +16,7 @@ class AddCustomGoal extends Component {
         component={Link}
         to="/goals/custom"
       >
+        <AddIcon />
         Add Custom Goal
       </div>
     );

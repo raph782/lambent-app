@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import "../components.css";
+import Dates from "../components/Dates";
+import CustomGoalFill from "../components/CustomGoalFill";
 import AddIcon from "@material-ui/icons/Add";
 import Button from "@material-ui/core/Button";
+import TextField from "@material-ui/core/TextField";
 import { Link } from "react-router-dom";
 
 import Checkbox from "@material-ui/core/Checkbox";
@@ -11,7 +14,7 @@ class PageGoalCategoryCustom extends Component {
   render() {
     return (
       <div className="body">
-        <div>DATES SECTION IN CONSTRUCTION</div>
+        <Dates />
 
         <div className="goal-cat-header">
           <AddIcon fontSize="large"></AddIcon>
@@ -54,12 +57,9 @@ class PageGoalCategoryCustom extends Component {
               Other
             </div>
           </div>
-          <div className="custom-limit">50 characters maximum</div>
+
           <div className="custom-type">
-            <div>
-              {"Type your custom goal here "}
-              <span style={{ color: "red" }}>*</span>
-            </div>
+            <CustomGoalFill></CustomGoalFill>
           </div>
           <div className="custom-recurring-container">
             <p className="custom-recurring-text">
