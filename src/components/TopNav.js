@@ -1,5 +1,5 @@
 import React from "react";
-import logoOurVisit from "../icons/logoOurVisit.png";
+import logoOurReach from "../icons/logoOurReach.png";
 import "../components.css";
 import SettingsIcon from "@material-ui/icons/Settings";
 import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
@@ -23,7 +23,7 @@ export default function TopNav() {
           className="top-nav-child"
           style={{ width: "80", paddingLeft: "10%" }}
         >
-          <img className="lambent-sizing" src={logoOurVisit} alt="Logo" />
+          <img className="lambent-sizing" src={logoOurReach} alt="Logo" />
         </div>
         <div
           className="top-nav-child"

@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import "../components.css";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
-import HealingIcon from "@material-ui/icons/Healing";
+import HealingIcon from "@material-ui/icons/LocalHospital";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import DeleteIcon from "@material-ui/icons/Delete";
@@ -20,7 +20,8 @@ function Goal({ goal, index, completeGoal, removeGoal }) {
       style={{
         textDecoration: goal.isCompleted ? "line-through" : "",
         backgroundColor: goal.isCompleted ? "lightgreen" : "",
-        width: "80%",
+        width: "100%",
+        borderRadius: "1.5em",
       }}
     >
       <IconButton
@@ -31,9 +32,7 @@ function Goal({ goal, index, completeGoal, removeGoal }) {
       >
         <DeleteIcon fontSize="small" />
       </IconButton>
-      <ListItemAvatar>
-        <HealingIcon />
-      </ListItemAvatar>
+      <ListItemAvatar>{goal.icon}</ListItemAvatar>
       {goal.text}
       <div>
         <Button variant="" color="" onClick={() => completeGoal(index)}>
@@ -69,21 +68,23 @@ function GoalForm({ addGoal }) {
 function Goals() {
   const [goals, setGoals] = useState([
     {
-      text:
-        "I am a very very very very very very very very very very very very very very very very very very long default",
+      icon: <HealingIcon />,
+      text: "I_am_50_characters_long………………………………………………………………………",
       isCompleted: false,
     },
     {
+      icon: <HealingIcon />,
       text: "",
       isCompleted: false,
     },
     {
+      icon: <HealingIcon />,
       text: "Default 3",
       isCompleted: false,
     },
   ]);
 
-  const addGoal = (text) => {
+  const addGoal = (icon, text) => {
     const newGoals = [...goals, { text }];
     setGoals(newGoals);
   };
@@ -105,23 +106,21 @@ function Goals() {
       <div className="goal-list">
         <div className="add-goal">
           <p>Goals:</p>
-          <div className="add-button">
-            <Button
-              style={{
-                fontSize: "15px",
-                display: "flex",
-              }}
-              component={Link}
-              to="/goals"
-              size="large"
-              variant="text"
-              color="default"
-              startIcon={<AddIcon />}
-            >
-              {"AddGoal"}
-            </Button>
-          </div>
-          <GoalForm addGoal={addGoal} />
+          <Button
+            style={{
+              display: "flex",
+              marginLeft: "80%",
+            }}
+            component={Link}
+            to="/goals"
+            size="large"
+            variant="text"
+            color="default"
+            startIcon={<AddIcon />}
+          >
+            {"AddGoal"}
+          </Button>
+          {/* <GoalForm addGoal={addGoal} /> */}
         </div>
 
         {goals.map((goal, index) => (

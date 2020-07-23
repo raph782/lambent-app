@@ -90,7 +90,6 @@ body {
 .motivational-photo {
   height: 30%;
   margin-top: 0;
-  border: 1px solid green;
   text-align: center;
 }
 
@@ -109,7 +108,6 @@ body {
 .achieving-my-goals {
   font-size: xx-large;
   text-align: center;
-  border-bottom: 2px solid #47525e;
   font-weight: bold;
 }
 
@@ -215,7 +213,12 @@ body {
 /* ----- END OF PAGESETTINGS ----- */
 
 .add-button {
-  margin-left: 60%;
+  right: 0;
+}
+
+.add-goal {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 /* PAGEGOALCATEGORYEDUCATION */
@@ -295,7 +298,6 @@ body {
   text-align: center;
   margin-left: 10%;
   margin-top: 2em;
-  border: 2px solid red;
 }
 
 .goal-category-button {

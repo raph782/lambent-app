@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { useState } from "react";
 import "../components.css";
 import Dates from "../components/Dates";
 import CustomGoalFill from "../components/CustomGoalFill";
@@ -59,7 +60,7 @@ class PageGoalCategoryCustom extends Component {
           </div>
 
           <div className="custom-type">
-            <CustomGoalFill></CustomGoalFill>
+            <CustomGoalFill />
           </div>
           <div className="custom-recurring-container">
             <p className="custom-recurring-text">

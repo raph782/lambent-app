@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 
 import TopNavIntro from "./components/TopNavIntro";
-import logoOurVisit from "./icons/logoOurVisit.png";
+import logoOurReach from "./icons/logoOurReach.png";
 
 class PageLoading extends Component {
   state = {};
@@ -12,7 +12,7 @@ class PageLoading extends Component {
         <TopNavIntro></TopNavIntro>
         <div>
           {" "}
-          <img src={logoOurVisit} alt="Logo" />
+          <img src={logoOurReach} alt="Logo" />
         </div>
         <div>Loading...</div>
         {/* <TestNav></TestNav>

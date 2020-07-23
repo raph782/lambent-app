@@ -19,7 +19,9 @@ class PageHomePage extends Component {
         <Link to="/resources">
           <div className="post-goals">Goal History</div>
         </Link>
+        <Link to="/resources">
         <div className="post-goals">Key Measures</div>
+        </Link>
       </div>
     );
   }

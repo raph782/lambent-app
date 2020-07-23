@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import AssignmentIcon from "@material-ui/icons/Assignment";
-import HealingIcon from "@material-ui/icons/Healing";
+import HealingIcon from "@material-ui/icons/LocalHospital";
 import HomeIcon from "@material-ui/icons/Home";
 import "../components.css";
 

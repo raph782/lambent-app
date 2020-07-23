@@ -4,7 +4,7 @@ import AddCustomGoal from "../components/AddCustomGoal";
 import AddIcon from "@material-ui/icons/Add";
 import Button from "@material-ui/core/Button";
 
-import HealingIcon from "@material-ui/icons/Healing";
+import HealingIcon from "@material-ui/icons/LocalHospital";
 import HouseIcon from "@material-ui/icons/House";
 import WorkIcon from "@material-ui/icons/Work";
 import SchoolIcon from "@material-ui/icons/School";
